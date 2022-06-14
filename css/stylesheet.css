@@ -33,11 +33,6 @@
       transition: 0.2s;
   }
 
-  .jumbotron {
-      background-color: var(--bg-panel);
-      transition: 0.2s;
-  }
-
   h1,
   h2,
   h3,
@@ -51,6 +46,33 @@
   h6 {
       color: var(--color-text);
   }
+
+  h1{
+    font-size: 28px;
+  }
+
+  .typewriter h1 {
+    overflow: hidden; 
+    border-right: .15em solid var(--color-headings); 
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: 
+      typing 2.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--color-headings); }
+  }
+
 
   p {
       color: var(--color-text);
